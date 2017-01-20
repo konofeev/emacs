@@ -72,3 +72,6 @@
 (setq evil-insert-state-cursor   '("#884444" bar))
 (setq evil-replace-state-cursor  '("#AA4444" hbar))
 (setq evil-operator-state-cursor '("#FF0000" hollow))
+
+;; Загрузка темы
+(load-theme 'misterioso)
