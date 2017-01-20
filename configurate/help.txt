@@ -1,0 +1,39 @@
+Краткое руководство - памятка
+
+c-h k <hotkey> - узнать действие комбинации клавиш
+c-h f <function> - узнать действие функции
+c-h v <variable> - узнать назначение переменной
+c-h a <name> - поиск по функциям\переменным
+
+(+ 3 4 3 4) - сложение
+(message "test text") - вывод текста
+
+Объявление функции
+(defun my-function ()
+  (interactive)          ; для вызова с помощью клавиш
+  (message "test text"))
+
+Вызов функции
+(my-function)
+
+Использование горячих клавиш
+(global-set-key (kbd "C-<f9>") 'my-function)
+
+Снять комбинацию горячих клавиш
+(global-unset-key (kbd "C-<f9>"))
+
+Переоткрыть в указанной кодировке C-x RET r
+Сохранить в указанной кодировке C-x RET f
+Для терминала указать кодировки C-x RET p
+Справка по клавишам для смены кодировки\языка\раскладки C-x RET C-h 
+
+Генерация файла тегов TAGS
+https://www.emacswiki.org/emacs/BuildTags
+cd <path-to-project>
+dir /b /s <pattern-files> | <full-path-to-etags> -
+dir /b /s *.java | c:\work\program\emacs\bin\etags.exe -
+ls -LR - дерево файлов
+du -sh - размер каталогов
+
+Индексация файлов. Указываем путь без слеша на конце!
+(setq gtags-rootdir "c:\\Users\\sbt-konofeyev-rr\\home\\project\\esa" )
