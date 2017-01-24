@@ -73,5 +73,6 @@
 (setq evil-replace-state-cursor  '("#AA4444" hbar))
 (setq evil-operator-state-cursor '("#FF0000" hollow))
 
-;; Загрузка темы
-(load-theme 'misterioso)
+;; Загрузка тем
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'atom-one-dark t)

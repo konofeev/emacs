@@ -1,8 +1,6 @@
 ;; Репозиторий http://github.com/konofeev/emacs
 ;; Настройки
 
-;;(add-to-list 'load-path "~/.emacs.d/configurate/")
-
 ;; Подгрузка функций
 (load "~/.emacs.d/configurate/function.el")
 
