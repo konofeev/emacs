@@ -45,7 +45,7 @@
 
 ;; Раскраска статус-строки в зависимости от текущего режима
 (lexical-let ((default-color (cons (face-background 'mode-line)
-                                    (face-foreground 'mode-line))))
+                                   (face-foreground 'mode-line))))
     (add-hook 'post-command-hook
         (lambda ()
             (let ((color (cond ((minibufferp) default-color)
