@@ -3,3 +3,5 @@
 !configurate
 !configutate/*
 !.gitignore
+!themes
+!themes/*
