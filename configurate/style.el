@@ -66,11 +66,11 @@
 (hl-line-mode t)
 
 ;; Расцветка курсора в зависимости от режима
-(setq evil-emacs-state-cursor    '("#FF0000" box))
-(setq evil-normal-state-cursor   '("#444488" box))
-(setq evil-visual-state-cursor   '("#886644" box))
-(setq evil-insert-state-cursor   '("#884444" bar))
-(setq evil-replace-state-cursor  '("#AA4444" hbar))
+(setq evil-emacs-state-cursor    '("#AA00DD" box))
+(setq evil-normal-state-cursor   '("#4444FF" box))
+(setq evil-visual-state-cursor   '("#AA6644" box))
+(setq evil-insert-state-cursor   '("#FF4444" bar))
+(setq evil-replace-state-cursor  '("#FF4444" hbar))
 (setq evil-operator-state-cursor '("#FF0000" hollow))
 
 ;; Загрузка темы
