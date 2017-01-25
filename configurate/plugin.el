@@ -43,12 +43,6 @@
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-log-done t)
 
-;; Статус строка - PowerLine
-;; https://github.com/Dewdrops/powerline
-(add-to-list 'load-path "~/.emacs.d/plugin/powerline")
-(require 'powerline)
-(powerline-evil-theme)
-
 ;; Индексация файлов Gnu Global
 ;; http://www.gnu.org/software/global
 (require 'gtags)
@@ -74,3 +68,9 @@
 (add-to-list 'load-path "~/.emacs.d/plugin/smex")
 (require 'smex)
 (smex-initialize)
+
+;; Статус строка - PowerLine
+;; https://github.com/Dewdrops/powerline
+(add-to-list 'load-path "~/.emacs.d/plugin-change")
+(require 'powerline)
+(powerline-evil-theme)

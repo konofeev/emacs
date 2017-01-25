@@ -49,7 +49,7 @@
     (add-hook 'post-command-hook
         (lambda ()
             (let ((color (cond ((minibufferp) default-color)
-                            ((evil-insert-state-p)  '("#FFCCCC" . "#884444"))
+                            ((evil-insert-state-p)  '("#AA8888" . "#884444"))
                             ((evil-replace-state-p) '("#FFAAAA" . "#884444"))
                             ((evil-normal-state-p)  '("#CCCCFF" . "#444488"))
                             ((evil-visual-state-p)  '("#FFFFCC" . "#888844"))

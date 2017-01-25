@@ -5,3 +5,5 @@
 !.gitignore
 !themes
 !themes/*
+!plugin-change
+!plugin-change/*
