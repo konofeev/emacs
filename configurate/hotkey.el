@@ -88,3 +88,4 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 ;; Подсказки в командах alt-x
 (global-set-key (kbd "M-x") 'smex)
+(define-key evil-normal-state-map (kbd "SPC SPC") 'smex)

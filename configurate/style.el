@@ -2,7 +2,7 @@
 
 
 ;; Шрифт
-(set-default-font "Consolas 15")
+(set-default-font "Consolas 16")
 
 ;; Отключаем панель инструментов
 (tool-bar-mode -1)
