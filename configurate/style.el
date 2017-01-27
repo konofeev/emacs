@@ -2,7 +2,7 @@
 
 
 ;; Шрифт
-(set-default-font "Consolas 14")
+(set-default-font "Consolas 15")
 
 ;; Отключаем панель инструментов
 (tool-bar-mode -1)
@@ -76,3 +76,9 @@
 ;; Загрузка тем
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'atom-one-dark t)
+
+(custom-set-variables
+    '(initial-frame-alist (quote ((fullscreen . maximized)))))
+(custom-set-faces
+    '(italic ((t (:slant italic)))))
+(set-face-italic 'font-lock-comment-face t)
