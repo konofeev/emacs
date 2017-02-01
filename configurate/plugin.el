@@ -17,7 +17,6 @@
 ;; Дерево проекта
 ;; https://www.emacswiki.org/emacs/download/sr-speedbar.el
 (require 'sr-speedbar)
-(define-key evil-normal-state-map (kbd "SPC f f") 'sr-speedbar-toggle)
 (setq speedbar-use-images t)
 
 ;; Сниппеты

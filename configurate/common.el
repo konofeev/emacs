@@ -10,7 +10,8 @@
     (define-coding-system-alias 'koi8-u 'cyrillic-koi8)
     (define-coding-system-alias 'KOI8-R 'cyrillic-koi8)
     (modify-coding-system-alist 'file "\\.java\\'" 'windows-1251)
-    (modify-coding-system-alist 'file "\\.cmd\\'" 'windows-1251))
+    (modify-coding-system-alist 'file "\\.cmd\\'" 'windows-1251)
+    (set-terminal-coding-system 'cp1251))
 
 ;; Информация о пользователе
 (setq user-full-name "Konofeev Roman")

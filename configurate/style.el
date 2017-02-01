@@ -2,7 +2,15 @@
 
 
 ;; Шрифт
-(set-default-font "Consolas 16")
+(custom-set-variables
+ '(display-time-mode t)
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ '(default ((t (:family "Consolas" :foundry "outline" :slant italic :weight normal :height 143 :width normal))))
+ '(italic ((t (:slant italic))))
+ '(show-paren-match ((t (:background "midnight blue")))))
 
 ;; Отключаем панель инструментов
 (tool-bar-mode -1)
