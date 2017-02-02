@@ -46,6 +46,7 @@
 ;; Projectile
 (define-key evil-normal-state-map (kbd "SPC p p") 'projectile-switch-project)
 (define-key evil-normal-state-map (kbd "SPC p f") 'projectile-find-file)
+(define-key evil-normal-state-map (kbd "SPC p b") 'projectile-switch-to-buffer)
 
 ;; Открыть файл настроек
 (define-key evil-normal-state-map (kbd "SPC o e") 'open-emacs-configurate)

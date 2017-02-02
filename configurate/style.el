@@ -82,3 +82,6 @@
 (custom-set-faces
     '(italic ((t (:slant italic)))))
 (set-face-italic 'font-lock-comment-face t)
+
+(set-face-background 'show-paren-match (face-background 'default))
+(set-face-foreground 'show-paren-match "#acf")
