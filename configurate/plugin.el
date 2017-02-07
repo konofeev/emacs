@@ -73,3 +73,11 @@
 (add-to-list 'load-path "~/.emacs.d/plugin-change")
 (require 'powerline)
 (powerline-evil-theme)
+
+;; Шаблоны html и css - плагин Emmet
+;; https://github.com/smihica/emmet-mode/releases
+(add-to-list 'load-path "~/.emacs.d/plugin/emmet")
+(require 'emmet-mode)
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook  'emmet-mode)

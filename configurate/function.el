@@ -32,4 +32,5 @@
 ;; Открыть файл org
 (defun open-org-java()
     (interactive)
-    (find-file "d:/work/repository/org/main.org"))
+    (find-file (concat (getenv "ORG_HOME") "/index.org")))
+
