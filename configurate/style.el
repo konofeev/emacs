@@ -82,8 +82,8 @@
 (setq evil-operator-state-cursor '("#FF0000" hollow))
 
 ;; Загрузка тем
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'atom-one-dark t)
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;; (load-theme 'atom-one-dark t)
 
 (custom-set-variables
     '(initial-frame-alist (quote ((fullscreen . maximized)))))
@@ -91,7 +91,7 @@
     '(italic ((t (:slant italic)))))
 (set-face-italic 'font-lock-comment-face t)
 
-(set-face-background 'show-paren-match (face-background 'default))
-(set-face-foreground 'show-paren-match "#acf")
+(set-face-background 'show-paren-match "#eef")
+(set-face-foreground 'show-paren-match "#35c")
 
 (global-linum-mode t)

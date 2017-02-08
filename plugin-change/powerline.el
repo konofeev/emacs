@@ -24,15 +24,15 @@
 
 (require 'cl-lib)
 
-(defface powerline-active1 '((t (:foreground "#BCF" :background "#444455" :inherit mode-line)))
+(defface powerline-active1 '((t (:foreground "#234" :background "#ccddff" :inherit mode-line)))
   "Powerline face 1."
   :group 'powerline)
 
-(defface powerline-active2 '((t (:foreground "#ABE" :background "#3a3a4a" :inherit mode-line)))
+(defface powerline-active2 '((t (:foreground "#234" :background "#bbccdd" :inherit mode-line)))
   "Powerline face 2."
   :group 'powerline)
 
-(defface powerline-active3 '((t (:foreground "#9AD" :background "#333344" :inherit mode-line)))
+(defface powerline-active3 '((t (:foreground "#234" :background "#aabbcc" :inherit mode-line)))
   "Powerline face 3."
   :group 'powerline)
 
