@@ -24,6 +24,13 @@
     (align-regexp start end
         (concat "\\(\\s-*\\)" regexp) 1 1 t))
 
+;; Выравнивание с повтором до конца строки
+(defun align-common (start end)
+    "Выравнивание кода с повтором"
+    (interactive "r")
+    (align-regexp start end
+        "\\(:\\|=\\)\\(\\s-*\\)" 1 1 t))
+
 ;; Открыть файл настроек
 (defun open-emacs-configurate()
     (interactive)

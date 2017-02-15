@@ -3,14 +3,11 @@
 
 ;; Шрифт
 (custom-set-variables
- '(display-time-mode t)
- '(initial-frame-alist (quote ((fullscreen . maximized))))
- '(show-paren-mode t)
- '(tool-bar-mode nil))
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 (custom-set-faces
- '(default ((t (:family "Consolas" :foundry "outline" :slant italic :weight normal :height 143 :width normal))))
- '(italic ((t (:slant italic))))
- '(show-paren-match ((t (:background "midnight blue")))))
+ '(default ((t (:family "DejaVu Sans Mono" :foundry "outline" :weight normal :height 128 :width normal :slant normal))))
+ '(show-paren-match ((t (:background "snow2")))))
 
 ;; Отключаем панель инструментов
 (tool-bar-mode -1)
@@ -39,7 +36,7 @@
 
 ;; Подсветка выражений в скобках
 (setq show-paren-style 'expression)
-(show-paren-mode 2)
+(show-paren-mode t)
 
 ;; Формат времени
 (setq display-time-24hr-format t)
@@ -80,16 +77,6 @@
 (setq evil-insert-state-cursor   '("#FF4444" bar))
 (setq evil-replace-state-cursor  '("#FF4444" hbar))
 (setq evil-operator-state-cursor '("#FF0000" hollow))
-
-;; Загрузка тем
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-;; (load-theme 'atom-one-dark t)
-
-(custom-set-variables
-    '(initial-frame-alist (quote ((fullscreen . maximized)))))
-(custom-set-faces
-    '(italic ((t (:slant italic)))))
-(set-face-italic 'font-lock-comment-face t)
 
 (set-face-background 'show-paren-match "#eef")
 (set-face-foreground 'show-paren-match "#35c")

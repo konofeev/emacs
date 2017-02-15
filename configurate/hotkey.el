@@ -41,7 +41,7 @@
 
 ;; Выравнивание кода
 (define-key evil-visual-state-map (kbd "SPC a") 'align-repeat)
-(define-key evil-normal-state-map (kbd "SPC a") 'align-repeat)
+(define-key evil-visual-state-map (kbd "SPC s") 'align-common)
 
 ;; Projectile
 (define-key evil-normal-state-map (kbd "SPC p p") 'projectile-switch-project)
