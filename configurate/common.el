@@ -73,4 +73,5 @@
 
 ;; Запуск в развернутом режиме окна
 (custom-set-variables
+ '(compile-command "gradle build")
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
